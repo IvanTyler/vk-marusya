@@ -1,0 +1,40 @@
+.header {
+    padding-block: 24px;
+    background-color: var(--background-black);
+    backdrop-filter: blur(10px);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: 80px;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 16px;
+    color: var(--content-disabled);
+    pointer-events: none;
+}
+
+.searchInput {
+    padding-left: 52px;
+}
+
+.login {
+    white-space: nowrap;
+}

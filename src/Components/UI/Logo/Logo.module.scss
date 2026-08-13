@@ -9,9 +9,7 @@
 }
 
 .mark {
-    width: clamp(24px, 2.8vw, 40px);
-    height: clamp(24px, 2.8vw, 40px);
-    border-radius: 50%;
+    width: clamp(19px, 2.2vw, 25px);
+    height: clamp(24px, 2.8vw, 32px);
     flex-shrink: 0;
-    background: linear-gradient(135deg, #7c6bff, #4fc3f7);
 }
