@@ -1,0 +1,9 @@
+@use '../style/normalize.scss';
+@use '../style/fonts.scss';
+@use '../style/variables.scss';
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--background-black);
+    color: var(--content-primary);
+}

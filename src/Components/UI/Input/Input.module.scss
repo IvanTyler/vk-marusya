@@ -1,0 +1,25 @@
+.input {
+    width: 100%;
+    padding: clamp(12px, 1.6vw, 16px);
+    border-radius: clamp(6px, 0.8vw, 8px);
+    background-color: var(--background-secondary);
+    border: 1px solid transparent;
+    font-family: var(--font-main);
+    font-size: clamp(14px, 1.4vw, 18px);
+    line-height: clamp(20px, 2vw, 24px);
+    color: var(--content-primary);
+    transition: border-color var(--transition-time);
+
+    &::placeholder {
+        color: var(--content-disabled);
+    }
+
+    &:focus {
+        outline: none;
+        border-color: var(--content-active);
+    }
+}
+
+.error {
+    border-color: var(--content-error);
+}

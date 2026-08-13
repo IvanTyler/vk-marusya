@@ -1,39 +1,17 @@
-/* Font "Circe" */
-/*@import url("./../assets/fonts/Inter/stylesheet.css");*/
-/*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');*/
+/* Font "Play" — используется во всех текстовых стилях UI-kit (body 18 reg / body 18 bold / body 24 reg) */
 
 @font-face {
-    font-family: 'Manrope';
-    font-weight: 300;
-    src: url('../assets/fonts/Manrope/Manrope-Light.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'Manrope';
+    font-family: 'Play';
+    font-style: normal;
     font-weight: 400;
-    src: url('../assets/fonts/Manrope/Manrope-Regular.woff2') format('woff2');
+    font-display: swap;
+    src: url('https://fonts.gstatic.com/s/play/v21/6aez4K2oVqwIjtI.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Manrope';
-    font-weight: 500;
-    src: url('../assets/fonts/Manrope/Manrope-Medium.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'Manrope';
-    font-weight: 600;
-    src: url('../assets/fonts/Manrope/Manrope-Semibold.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'Manrope';
+    font-family: 'Play';
+    font-style: normal;
     font-weight: 700;
-    src: url('../assets/fonts/Manrope/Manrope-Bold.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'Manrope';
-    font-weight: 800;
-    src: url('../assets/fonts/Manrope/Manrope-ExtraBold.woff2') format('woff2');
+    font-display: swap;
+    src: url('https://fonts.gstatic.com/s/play/v21/6ae84K2oVqwItm4TOpc.ttf') format('truetype');
 }

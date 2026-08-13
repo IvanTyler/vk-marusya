@@ -1,4 +1,27 @@
 :root {
-  --font-main: 'Manrope';
-  --transitionTime: .3s;
+    --font-main: 'Play', sans-serif;
+
+    --background-black: #0a0b0b;
+    --background-secondary: #393b3c;
+    --background-white: #ffffff;
+    --background-black-disabled: #747474;
+
+    --content-primary: #ffffff;
+    --content-black: #000000;
+    --content-placeholder: rgba(0, 0, 0, 0.4);
+    --content-disabled: rgba(255, 255, 255, 0.5);
+    --content-active: #b4a9ff;
+    --content-error: #ff7575;
+
+    --button-primary-default: #67a5eb;
+    --button-primary-disabled: #45526e;
+
+    --rating-excellent: #a59400;
+    --rating-good: #308e21;
+    --rating-poor: #777777;
+    --rating-bullshit: #c82020;
+
+    --vk-blue: #0077ff;
+
+    --transition-time: 0.3s;
 }

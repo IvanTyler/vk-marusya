@@ -1,0 +1,15 @@
+.menuItem {
+    padding-bottom: clamp(6px, 0.8vw, 8px);
+    border-bottom: 1.5px solid transparent;
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: clamp(16px, 1.8vw, 24px);
+    line-height: clamp(24px, 2.4vw, 32px);
+    color: var(--content-primary);
+    transition: color var(--transition-time), border-color var(--transition-time);
+}
+
+.active {
+    color: var(--content-active);
+    border-color: var(--content-active);
+}

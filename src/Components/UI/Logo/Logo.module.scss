@@ -1,0 +1,17 @@
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: clamp(8px, 1vw, 12px);
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: clamp(20px, 2.4vw, 32px);
+    color: var(--content-primary);
+}
+
+.mark {
+    width: clamp(24px, 2.8vw, 40px);
+    height: clamp(24px, 2.8vw, 40px);
+    border-radius: 50%;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, #7c6bff, #4fc3f7);
+}
