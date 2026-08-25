@@ -7,8 +7,8 @@
     line-height: clamp(24px, 2.4vw, 32px);
     color: var(--content-primary);
     transition: color var(--transition-time), border-color var(--transition-time);
-}
 
-.active {
-    border-color: var(--content-active);
+    &.active {
+        border-color: var(--content-active);
+    }
 }

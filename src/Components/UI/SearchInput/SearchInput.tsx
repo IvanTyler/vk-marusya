@@ -11,8 +11,8 @@ interface SearchInputProps extends InputHTMLAttributes<HTMLInputElement> {
 export const SearchInput: FC<SearchInputProps> = ({ className, ...restProps }) => {
     return (
         <label className={clsx(style.search, className)}>
-            <Icon name="search" className={style.icon} />
-            <Input className={style.input} {...restProps} />
+            <Icon name="search" className={style.search__icon} />
+            <Input className={style.search__input} {...restProps} />
         </label>
     );
 };

@@ -9,7 +9,7 @@ interface LogoProps {
 export const Logo: FC<LogoProps> = ({ className }) => {
     return (
         <span className={clsx(style.logo, className)}>
-            <img src="/icons/logo.svg" alt="" className={style.mark} width={25} height={32} />
+            <img src="/icons/logo.svg" alt="" className={style.logo__mark} width={25} height={32} />
             маруся
         </span>
     );

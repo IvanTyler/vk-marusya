@@ -18,8 +18,8 @@
         outline: none;
         border-color: var(--content-active);
     }
-}
 
-.error {
-    border-color: var(--content-error);
+    &.error {
+        border-color: var(--content-error);
+    }
 }

@@ -1,12 +1,9 @@
-'use client';
-
-import { useEffect } from 'react';
-import { fetchRandomMovie } from '@/api/Movies';
+import { RandomMovie } from '@/Components/RandomMovie/RandomMovie';
 
 export default function HomePage() {
-    useEffect(() => {
-        fetchRandomMovie().then((movie) => console.log(movie));
-    }, []);
-
-    return <main />;
+    return (
+        <main>
+            <RandomMovie />
+        </main>
+    );
 }

@@ -6,10 +6,10 @@
     font-weight: 700;
     font-size: clamp(20px, 2.4vw, 32px);
     color: var(--content-primary);
-}
 
-.mark {
-    width: clamp(19px, 2.2vw, 25px);
-    height: clamp(24px, 2.8vw, 32px);
-    flex-shrink: 0;
+    &__mark {
+        width: clamp(19px, 2.2vw, 25px);
+        height: clamp(24px, 2.8vw, 32px);
+        flex-shrink: 0;
+    }
 }

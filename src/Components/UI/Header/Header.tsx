@@ -8,16 +8,16 @@ import style from './Header.module.scss';
 export const Header: FC = () => {
     return (
         <header className={style.header}>
-            <ContainerSection className={style.wrapper}>
+            <ContainerSection className={style.containerHeader}>
                 <Logo />
 
-                <nav className={style.nav}>
+                <nav className={style.header__nav}>
                     <MenuItem active>Главная</MenuItem>
                     <MenuItem>Жанры</MenuItem>
                     <SearchInput placeholder="Поиск" />
                 </nav>
 
-                <MenuItem className={style.login}>Войти</MenuItem>
+                <MenuItem className={style.header__login}>Войти</MenuItem>
             </ContainerSection>
         </header>
     );

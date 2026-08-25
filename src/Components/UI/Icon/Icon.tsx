@@ -6,6 +6,7 @@ export type IconName =
     | 'burger'
     | 'check'
     | 'copyright'
+    | 'favorite'
     | 'genres'
     | 'info'
     | 'loading'
@@ -28,14 +29,15 @@ interface IconProps {
     name: IconName;
     className?: string;
     size?: string;
+    spinning?: boolean;
 }
 
-export const Icon: FC<IconProps> = ({ name, className, size }) => {
+export const Icon: FC<IconProps> = ({ name, className, size, spinning }) => {
     const maskImage = `url(/icons/${name}.svg)`;
 
     return (
         <span
-            className={clsx(style.icon, className)}
+            className={clsx(style.icon, spinning && style.spinning, className)}
             style={
                 {
                     maskImage,

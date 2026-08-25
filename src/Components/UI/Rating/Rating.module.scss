@@ -5,27 +5,27 @@
     padding: clamp(2px, 0.4vw, 4px) clamp(8px, 1.2vw, 12px);
     border-radius: clamp(10px, 1.6vw, 16px);
     color: var(--content-primary);
-}
 
-.value {
-    font-family: var(--font-main);
-    font-weight: 700;
-    font-size: clamp(12px, 1.2vw, 18px);
-    line-height: clamp(16px, 1.6vw, 24px);
-}
+    &__value {
+        font-family: var(--font-main);
+        font-weight: 700;
+        font-size: clamp(12px, 1.2vw, 18px);
+        line-height: clamp(16px, 1.6vw, 24px);
+    }
 
-.excellent {
-    background-color: var(--rating-excellent);
-}
+    &.excellent {
+        background-color: var(--rating-excellent);
+    }
 
-.good {
-    background-color: var(--rating-good);
-}
+    &.good {
+        background-color: var(--rating-good);
+    }
 
-.poor {
-    background-color: var(--rating-poor);
-}
+    &.poor {
+        background-color: var(--rating-poor);
+    }
 
-.bullshit {
-    background-color: var(--rating-bullshit);
+    &.bullshit {
+        background-color: var(--rating-bullshit);
+    }
 }

@@ -1,23 +1,21 @@
 .header {
-    padding-block: 24px;
-    background-color: var(--background-black);
-    backdrop-filter: blur(10px);
-}
+    padding: 24px;
 
-.wrapper {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    column-gap: 80px;
-}
+    .containerHeader {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        column-gap: 80px;
+    }
 
-.nav {
-    display: grid;
-    grid-template-columns: auto auto 1fr;
-    align-items: center;
-    column-gap: 40px;
-}
+    &__nav {
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        align-items: center;
+        column-gap: 40px;
+    }
 
-.login {
-    white-space: nowrap;
+    &__login {
+        white-space: nowrap;
+    }
 }

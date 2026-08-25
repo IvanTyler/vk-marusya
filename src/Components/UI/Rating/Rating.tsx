@@ -23,7 +23,7 @@ export const Rating: FC<RatingProps> = ({ value, className }) => {
     return (
         <div className={clsx(style.rating, style[grade], className)}>
             <Icon name="star-white" size="clamp(10px, 1.2vw, 16px)" />
-            <span className={style.value}>{value.toFixed(1).replace('.', ',')}</span>
+            <span className={style.rating__value}>{value.toFixed(1).replace('.', ',')}</span>
         </div>
     );
 };

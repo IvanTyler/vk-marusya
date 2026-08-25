@@ -2,15 +2,15 @@
     position: relative;
     display: flex;
     align-items: center;
-}
 
-.icon {
-    position: absolute;
-    left: 16px;
-    color: var(--content-disabled);
-    pointer-events: none;
-}
+    &__icon {
+        position: absolute;
+        left: 16px;
+        color: var(--content-disabled);
+        pointer-events: none;
+    }
 
-.input {
-    padding-left: 52px;
+    &__input {
+        padding-left: 52px;
+    }
 }
