@@ -1,19 +1,29 @@
 .header {
-    padding: 24px;
+    padding-top: 24px;
 
     .containerHeader {
         display: grid;
         grid-template-columns: auto 1fr auto;
         align-items: center;
         column-gap: 80px;
+
+        @media (max-width: 800px) {
+            grid-template-columns: 1fr auto auto;
+            column-gap: 20px;
+        }
     }
 
     &__nav {
         display: grid;
         grid-template-columns: auto auto 1fr;
         align-items: center;
-        column-gap: 40px;
+        column-gap: 20px;
+
+        @media (max-width: 800px) {
+            grid-template-columns: auto auto;
+        }
     }
+
 
     &__login {
         white-space: nowrap;

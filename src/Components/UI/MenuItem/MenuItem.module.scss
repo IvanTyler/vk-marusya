@@ -1,4 +1,6 @@
 .menuItem {
+    display: inline-flex;
+    align-items: center;
     padding-bottom: clamp(6px, 0.8vw, 8px);
     border-bottom: 1.5px solid transparent;
     font-family: var(--font-main);
@@ -10,5 +12,10 @@
 
     &.active {
         border-color: var(--content-active);
+    }
+
+    &.noBorder {
+        border-bottom: none;
+        padding-bottom: 0;
     }
 }

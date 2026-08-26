@@ -5,6 +5,7 @@ import style from './Icon.module.scss';
 export type IconName =
     | 'burger'
     | 'check'
+    | 'close'
     | 'copyright'
     | 'favorite'
     | 'genres'

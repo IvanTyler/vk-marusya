@@ -22,4 +22,18 @@
     &.error {
         border-color: var(--content-error);
     }
+
+    &.light {
+        background-color: var(--background-white);
+        border-color: var(--content-placeholder);
+        color: var(--content-black);
+
+        &::placeholder {
+            color: var(--content-placeholder);
+        }
+
+        &.error {
+            border-color: var(--content-error);
+        }
+    }
 }

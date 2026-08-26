@@ -13,4 +13,11 @@
     &__input {
         padding-left: 52px;
     }
+
+    &.iconOnly {
+        background: none;
+        border: none;
+        padding: 0;
+        color: var(--content-primary);
+    }
 }

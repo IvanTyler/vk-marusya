@@ -1,0 +1,83 @@
+.authModal {
+    position: relative;
+    width: 420px;
+    max-width: 100%;
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        width: 100%;
+        padding: clamp(32px, 4vw, 64px) clamp(24px, 3vw, 40px);
+        border-radius: 16px;
+        background-color: var(--background-white);
+    }
+
+    &__close {
+        position: absolute;
+        top: 0;
+        right: -72px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: none;
+        background-color: var(--background-white);
+        color: var(--content-black);
+
+        @media (max-width: 800px) {
+            top: 16px;
+            right: 16px;
+            width: 24px;
+            height: 24px;
+            background: none;
+        }
+    }
+
+    &__logo {
+        color: var(--content-black);
+    }
+
+    &__title {
+        font-family: var(--font-main);
+        font-weight: 700;
+        font-size: clamp(18px, 2vw, 24px);
+        line-height: clamp(24px, 2.6vw, 32px);
+        color: var(--content-black);
+        text-align: center;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+    }
+
+    &__submit {
+        width: 100%;
+        margin-top: 12px;
+    }
+
+    &__message {
+        font-family: var(--font-main);
+        font-size: clamp(14px, 1.4vw, 16px);
+        line-height: clamp(20px, 2vw, 24px);
+        color: var(--content-placeholder);
+        text-align: center;
+    }
+
+    &__switch {
+        font-family: var(--font-main);
+        font-weight: 700;
+        font-size: clamp(14px, 1.4vw, 16px);
+        line-height: clamp(20px, 2vw, 24px);
+        color: var(--content-black);
+        background: none;
+        border: none;
+    }
+}
