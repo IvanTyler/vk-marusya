@@ -59,11 +59,15 @@ export const RandomMovie: FC = () => {
                     </div>
                 </div>
 
-                <img
-                    src={movie.backdropUrl}
-                    alt={movie.title}
-                    className={style.randomMovie__img}
-                />
+                {movie.backdropUrl ? (
+                    <img
+                        src={movie.backdropUrl}
+                        alt={movie.title}
+                        className={style.randomMovie__img}
+                    />
+                ) : (
+                    <div className={style.randomMovie__imgPlaceholder} />
+                )}
             </ContainerSection>
         </section>
     );

@@ -68,7 +68,8 @@
         }
     }
 
-    &__img {
+    &__img,
+    &__imgPlaceholder {
         width: 100%;
         height: clamp(234px, 38vw, 552px);
         object-fit: cover;
@@ -78,5 +79,9 @@
             order: -1;
             height: clamp(234px, 55vw, 702px);
         }
+    }
+
+    &__imgPlaceholder {
+        background-color: var(--background-secondary);
     }
 }

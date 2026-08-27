@@ -1,0 +1,27 @@
+.topMovies {
+    padding-block: clamp(40px, 6vw, 80px);
+
+    .containerTopMovies {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(32px, 5vw, 64px);
+    }
+
+    &__title {
+        font-family: var(--font-main);
+        font-weight: 700;
+        font-size: clamp(28px, 3.6vw, 40px);
+        line-height: clamp(34px, 4.2vw, 48px);
+        color: var(--content-primary);
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(calc(clamp(160px, 17vw, 224px) - 20px), 1fr));
+        gap: 40px;
+
+        & > a {
+            justify-self: center;
+        }
+    }
+}
