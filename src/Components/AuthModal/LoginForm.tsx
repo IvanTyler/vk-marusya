@@ -3,9 +3,11 @@
 import { FC } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useMutation } from '@tanstack/react-query';
 import { FormField } from '@/Components/UI/FormField/FormField';
 import { ActionButton } from '@/Components/UI/ActionButton/ActionButton';
 import { loginSchema, LoginFormValues } from '@/api/types/Auth';
+import { loginUser } from '@/api/Auth';
 import style from './AuthModal.module.scss';
 
 export const LoginForm: FC = () => {
@@ -15,9 +17,19 @@ export const LoginForm: FC = () => {
         formState: { errors },
     } = useForm<LoginFormValues>({ resolver: zodResolver(loginSchema) });
 
+    const { mutate } = useMutation({
+        mutationFn: loginUser,
+        onSuccess: async (data) => {
+            console.log('response', data);
+
+        },
+        onError: (error) => {
+            console.error(error);
+        },
+    });
+
     const onSubmit = (values: LoginFormValues) => {
-        // TODO: подключить запрос логина, когда будет известен эндпоинт
-        console.log(values);
+        mutate(values);
     };
 
     return (

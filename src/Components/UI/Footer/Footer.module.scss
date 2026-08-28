@@ -1,0 +1,30 @@
+.footer {
+    padding-block: clamp(24px, 2.8vw, 40px);
+
+    .containerFooter {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navList {
+        display: flex;
+        align-items: center;
+        gap: clamp(12px, 1.7vw, 24px);
+    }
+
+    &__socialLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: clamp(28px, 2.5vw, 36px);
+        height: clamp(28px, 2.5vw, 36px);
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        border-radius: 8px;
+        color: var(--content-primary);
+        transition: background-color var(--transition-time);
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+}

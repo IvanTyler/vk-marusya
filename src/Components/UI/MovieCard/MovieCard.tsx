@@ -5,7 +5,7 @@ import style from './MovieCard.module.scss';
 
 interface MovieCardProps {
     movie: Movie;
-    rank: number;
+    rank?: number;
 }
 
 export const MovieCard: FC<MovieCardProps> = ({ movie, rank }) => {
@@ -16,7 +16,7 @@ export const MovieCard: FC<MovieCardProps> = ({ movie, rank }) => {
             ) : (
                 <div className={style.movieCard__placeholder} />
             )}
-            <span className={style.movieCard__rank}>{rank}</span>
+            {rank !== undefined && <span className={style.movieCard__rank}>{rank}</span>}
         </Link>
     );
 };

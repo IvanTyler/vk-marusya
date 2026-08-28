@@ -7,6 +7,10 @@ export const loginSchema = z.object({
 
 export type LoginFormValues = z.infer<typeof loginSchema>;
 
+export const loginResponseSchema = z.object({
+    result: z.boolean(),
+});
+
 export const registerSchema = z
     .object({
         email: z.string().min(1, 'Введите email').email('Некорректный email'),
